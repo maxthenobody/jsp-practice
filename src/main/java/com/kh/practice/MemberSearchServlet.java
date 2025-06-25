@@ -46,7 +46,6 @@ public class MemberSearchServlet extends HttpServlet {
 		List<Member> list = new ArrayList<>();
 		
 		for (Member m : mockList) {
-			System.out.println(m.getName());
 			if (m.getName().contains(name)) {
 				list.add(m);
 			}
