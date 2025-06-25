@@ -35,7 +35,6 @@ public class MemberSearchServlet extends HttpServlet {
         mockList.add(new Member("유상성", 21, "남자"));
         mockList.add(new Member("한지은", 28, "여자"));
         mockList.add(new Member("고심현", 40, "남자"));
-        mockList.add(new Member("abc", 40, "남자"));
 	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
