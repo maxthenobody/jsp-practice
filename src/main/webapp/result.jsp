@@ -8,6 +8,7 @@
 </head>
 <body>
 	<h2>검색 결과</h2>
+	<hr>
 	<!-- 
 		Servlet에서 전달받은 데이터를 바탕으로 응답화면 그리기.
 		1. servlet에서 전달받은 데이터가 존재하는 경우와 , 존재하지 않는 경우를
@@ -27,6 +28,7 @@
 			           	<p>나이: ${m.age }</p>
 			           	<p>성별: ${m.gender }</p>						
 					</div>
+					<hr>
 				</c:forEach>
 			</c:otherwise>
 		</c:choose>
