@@ -3,6 +3,7 @@ package com.kh.practice;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
@@ -49,6 +50,8 @@ public class MemberSearchServlet extends HttpServlet {
 				list.add(m);
 			}
 		}
+		
+//		List<Member> list = mockList.stream().filter(m -> m.getName().contains(name)).collect(Collectors.toList());
 		
 		request.setAttribute("list", list);
 		/*
